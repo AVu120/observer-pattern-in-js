@@ -1,13 +1,13 @@
 const Observer = require("./Observer");
 
-class OddObserver extends Observer {
+class OddNumberObserver extends Observer {
   constructor() {
     super();
   }
 
   // react only to events with odd values.
   shouldReactToEvent(event) {
-    return event.name === "increment of loop" && event.value % 2 != 0;
+    return event.name === "increment of loop" && event.value % 2 !== 0;
   }
 
   reactToEvent(event) {
@@ -18,4 +18,4 @@ class OddObserver extends Observer {
   }
 }
 
-module.exports = OddObserver;
+module.exports = OddNumberObserver;

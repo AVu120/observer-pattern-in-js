@@ -11,11 +11,11 @@ class Observer {
   }
 
   shouldReactToEvent() {
-    throw new Error("This needs to be implemented");
+    throw new Error("This needs to be implemented.");
   }
 
   reactToEvent() {
-    throw new Error("This needs to be implemented");
+    throw new Error("This needs to be implemented.");
   }
 }
 

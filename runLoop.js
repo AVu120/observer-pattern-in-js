@@ -1,6 +1,6 @@
-const Looper = require("./Loop");
-const OddObserver = require("./OddObserver");
+const Loop = require("./Loop");
+const OddNumberObserver = require("./OddNumberObserver");
 
-const l = new Looper(1, 100);
-l.addObserver(new OddObserver());
-l.run();
+const observedLoop = new Loop(1, 100);
+observedLoop.addObserver(new OddNumberObserver());
+observedLoop.run();
